@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Lecture 1:</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Stephen Metts | Part-Time Associate Professor" />
+    <script src="libs/header-attrs-2.9/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Lecture 1:
+## <br/>An introduction to Cartography, Geographic Information Systems (GIS) &amp; Spatial Technology
+### Stephen Metts | Part-Time Associate Professor
+### <a href="https://www.newschool.edu/international-affairs/">Graduate School of International Affairs, Management and Urban Policy The New School, NYC</a>
+### Spring 2022 | <a href="https://courses.newschool.edu/courses/NINT5380/">NINT 5380</a>
+
+---
+
+
+background-image: url(img/Claudius_Ptolemy-_The_World.jpg)
+background-size: cover
+class: left ,top, inverse
+# Short History of Cartography
+
+.footnote[[source](https://en.wikipedia.org/wiki/Cartography#/media/File:Claudius_Ptolemy-_The_World.jpg)]
+--
+
+### .inverse[Ptolemy's World Map]
+
+--
+
+- .inverse[based on coordinates from Geographia | Original Greco-Roman society, 2nd century | Copy produced 1482]
+
+--
+
+- .inverse[Notable features of Ptolemy's map is the first use of longitudinal and latitudinal lines as well as specifying terrestrial locations by celestial observations.]
+
+---
+background-size: cover
+class: left ,top
+# Short History of Cartography
+###Gerardus Mercator - 1512 - 1594
+
+.center[&lt;img src="img/Gerardus_Mercator3.jpeg" width= 50%/&gt;]
+.footnote[[source](https://en.wikipedia.org/wiki/Gerardus_Mercator)]
+
+---
+background-size: cover
+class: left ,top, 
+# Short History of Cartography
+###Mercator Projection Transformation Visualized
+&lt;br&gt;
+&lt;br&gt;
+.center[&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CPQZ7NcQ6YQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;]
+
+.footnote[[source](https://en.wikipedia.org/wiki/Cartography#/media/File:Claudius_Ptolemy-_The_World.jpg)]
+---
+background-size: cover
+class: left ,top
+# Short History of Cartography
+###Gerardus Mercator -  1569 world map
+
+.center[&lt;img src="img/Mercator_1569.png" width= 80%/&gt;]
+
+.footnote[[source](https://en.wikipedia.org/wiki/Gerardus_Mercator)]
+
+---
+background-size: cover
+class: left ,top
+# Short History of Cartography
+###Mercator Map Components
+&lt;br&gt;
+.center[&lt;img src="img/mercator_map_diagram-usgs.png" width= 90%/&gt;]
+
+.footnote[[source](https://store.usgs.gov/assets/mod/storefiles/PDF/16573.pdf)]
+
+---
+background-image: url(img/First_photo_from_space.jpg)
+background-size: cover
+class: left ,top, inverse
+# Short History of Cartography
+###20th Century
+
+.footnote[[source](https://en.wikipedia.org/wiki/Satellite_imagery#/media/File:First_photo_from_space.jpg)]
+--
+
+- The first image from space 
+
+--
+
+- sub-orbital V-2 rocket flight launched by the U.S. - 11/24/46 
+
+---
+background-image: url(img/297755main_GPN-2001-000009_full.jpeg)
+background-size: cover
+class: left ,top, inverse
+# Short History of Cartography
+###20th Century
+
+.footnote[[source](https://www.nasa.gov/multimedia/imagegallery/image_feature_1249.html)]
+--
+
+- Apollo 8 Mission, 1968 - 'Earthrise', taken from lunar orbit, 12/24/1968
+
+--
+
+- Often credited with start of modern era environmental movement
+
+---
+background-image: url(img/ben.fry.roads.png)
+background-size: cover
+class: left ,top
+# Short History of Cartography
+###21st Century - Digital Data as Cartography
+
+.footnote[[source](https://en.wikipedia.org/wiki/Gerardus_Mercator)]
+
+--
+
+- All of the streets in the lower 48 United States: 26 million individual road segments
+
+---
+background-image: url(img/london.gis.png)
+background-size: cover
+class: left ,top, inverse
+# Short History of Cartography
+### .inverse['First' Geographic Information System - GIS]
+
+.footnote[[source](https://en.wikipedia.org/wiki/John_Snow)]
+
+--
+
+- .inverse[John Snow (15 March 1813 – 16 June 1858)]
+
+--
+
+- .inverse[1854 Broad Street cholera outbreak]
+
+---
+background-image: url(img/cholera.jpeg)
+background-size: cover
+class: left ,top, inverse
+# Short History of Cartography
+### .inverse[John Snow 'Pump Map']
+
+.footnote[[source](https://en.wikipedia.org/wiki/John_Snow)]
+
+--
+
+- .inverse[Early example of (Modern) epidemilogical mapping]
+
+--
+
+- .inverse[fits within the larger study and analysis of the distribution (who, when, and where)]
+
+
+---
+background-size: cover
+class: left ,top, inverse
+# Short History of Cartography
+.footnote[[source](https://en.wikipedia.org/wiki/Tobler%27s_first_law_of_geography)]
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+## The First Law of Geography, according to Waldo Tobler, is *everything is related to everything else, but near things are more related than distant things.*
+---
+background-size: cover
+class: left ,top
+# Short History of Cartography
+
+- Thiessen polygons around the wells, defining straight-line least-distance service areas for each
+
+.center[&lt;img src="img/snow.neighborhoods.png" width= 60%/&gt;]
+.footnote[[source](https://github.com/lindbrook/cholera)]
+
+---
+background-size: cover
+class: left ,top, inverse
+# Short History of Cartography
+.footnote[[source - Franklin C. An introduction to geographic information systems](https://eric.ed.gov/?id=EJ443381)]
+&lt;br&gt;
+&lt;br&gt;
+## *Spatial analysis stands over the principle that there is some spatial component— absolute, relative, or both— in data. Indeed, in the beginning of the twentieth century, 80% of all data have already some kind of spatial explanation.*
+
+---
+background-image: url(img/2.png)
+background-size: cover
+# GIS | Prevalent, Mature, Accessible
+
+**Prevalence**:
+
+- 80% of the world’s data includes some kind of spatial aspect, 80% of data has a location component, 80% of data possesses a geographic reference, 80% of transactional data has a location component.&lt;sup&gt;*&lt;/sup&gt;
+
+**Maturity &amp; accessibility**:
+
+.footnote[[*] [80% of data is geographic](https://www.gislounge.com/80-percent-data-is-geographic/)]
+---
+background-image: url(img/1a.png)
+background-size: cover
+class: left ,top, inverse
+# GIS | Geographic Information Systems Definition
+###Geographic
+&gt; i.e. the *geometry* component of data
+
+
+---
+background-image: url(img/1b.png)
+background-size: cover
+class: left ,top, inverse
+# GIS | Geographic Information Systems Definition
+###Information
+&gt; i.e. common, colloquial formats, often *tabular*
+
+
+---
+background-image: url(img/1c.png)
+background-size: cover
+class: left ,top, inverse
+# GIS | Geographic Information Systems Definition
+###System
+&gt; processing *input* data to *output* meaningful results, often presented as cartographic output, i.e. *maps*
+
+
+---
+background-image: url(img/4.png)
+background-size: cover
+class: left ,top, inverse
+# GIS | 2 Data Models - *Vector &amp; Raster*
+###Valid GIS data inputs are generally defined by two main models - Vector &amp; Raster
+&gt; The vector model is defined by points, lines and polygons; this model is typically used to represent discrete phenomena, i.e. 'bounded' or defined by an edge.
+
+---
+background-image: url(img/5.png)
+background-size: cover
+class: left ,top, inverse
+# GIS | 2 Data Models - *Vector &amp; Raster*
+###Valid GIS data inputs are generally defined by two main models - Vector &amp; Raster
+&gt; The raster model is defined by rows &amp; columns of cells resulting in a grid; this model is often used to represent continuous data typical of environmental phenomena:
+
+---
+background-size: cover
+class: left ,top
+# GIS | Attribute Structures
+
+### Attribute Data at its root is structured as ‘primitive data types’
+&lt;br&gt;
+.center[&lt;img src="img/basic.type.png"&gt;]
+.footnote[[Source](https://en.wikipedia.org/wiki/Primitive_data_type)]
+
+
+
+---
+background-size: cover
+class: left ,top
+# GIS | Attribute Structures
+
+### Attribute Data organized via hierarchy
+&lt;br&gt;
+.center[&lt;img src="img/data.structure.png" width= 60%/&gt;]
+
+
+
+.footnote[[GIS for Planning and the Built Environment - Ed Ferrari; Alasdair Rae](https://bookshop.org/books/gis-for-planning-and-the-built-environment-an-introduction-to-spatial-analysis/9781137307156)]
+
+---
+
+background-image: url(img/3.png)
+background-size: cover
+class: left ,top, inverse
+# GIS | *Overlay* Principal
+###GIS data inputs are termed *layers*; each layer represents a particular *theme*
+&gt; these layers are *stacked* consistently for spatial analysis in and between layers:
+
+---
+background-image: url(img/qgis.png)
+background-size: cover
+class: left ,top, inverse
+# GIS | Desktop GIS Systems - QGIS
+
+
+.footnote[[QGIS](https://qgis.org/en/site/index.html)]
+--
+&lt;br&gt;
+- .inverse[QGIS (until 2013 known as Quantum GIS) is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing, editing, and analysis of geospatial data.]
+
+--
+
+- .inverse[The long-term repositories currently offer QGIS 3.16.9 'Hannover'.]
+
+--
+
+- .inverse[Cross-Platform - install and run on Windows, MacOS, Linux.  Some plugins will not run on all operating systems, and occasionally errors that show up on one system are not readily replicated on another system.]
+
+---
+background-image: url(img/qgis_doc.png)
+background-size: cover
+class: left ,top, inverse
+# GIS | Desktop GIS Systems - QGIS
+.footnote[[QGIS Documentation](https://qgis.org/en/docs/index.html)]
+--
+&lt;br&gt;
+- .inverse[The software is well documented.  Popular plugins tend to be well documented also.]
+
+---
+background-size: cover
+class: left ,top
+# GIS | Terminology for Class 1
+
+### Layer(s)
+
+- A logical set of thematic data described and stored in a map library (GIS Project). Layers can be laid atop one another for viewing or spatial analysis.
+
+.footnote[[Source](https://support.esri.com/en/other-resources/gis-dictionary/term/ba1e96e7-4cae-4714-875a-a7e3488b8bb9)]
+
+.center[&lt;img src="img/qgis_layers.png" width= 90%/&gt;]
+---
+background-size: cover
+class: left ,top
+# GIS | Terminology for Class 1
+
+### Feature
+
+- In a GIS, a physical object or location of an event. Features can be points (a tree or a traffic
+accident), lines (a road or river), or areas (a forest or a parking lot).
+
+.footnote[[Source](https://overpass-turbo.eu/s/19Y9)]
+
+.center[&lt;img src="img/qgis_feature.png" width= 90%/&gt;]
+
+---
+background-size: cover
+class: left ,top
+# GIS | Terminology for Class 1
+
+### Feature
+
+- Point &gt; Polyline &gt; Polygon = Primitive Vector Types.
+
+.footnote[[Source](https://mgimond.github.io/Spatial/chp02-0.html)]
+
+.center[&lt;img src="img/point_polyline_polygon.png" width= 70%/&gt;]
+
+---
+background-image: url(img/vertices_centroid.png)
+background-size: cover
+class: left ,top
+# GIS | Terminology for Class 1
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+### .inverse[Geometry]
+
+--
+
+- .inverse[ **Geometry** deals with the measures and properties of points, lines and surfaces. In a GIS,
+geometry is used to represent the spatial component of geographic features.]
+
+--
+
+- .inverse[**Centroid** represents the 'center' point of any one polygon.]
+
+--
+
+- .inverse[**Vertices** are collections of points that compose polylines and polygons.]
+
+
+
+---
+background-size: cover
+class: left ,top
+# GIS | Terminology for Class 1
+### Attribute Table &gt; Record &amp; Row
+
+.center[&lt;img src="img/attribute_row_table.png" width= 90%/&gt;]
+
+.footnote[[Source](https://mgimond.github.io/Spatial/chp02-0.html)]
+
+--
+
+- **Record** = A logical unit of data in a file.
+
+--
+
+- In an attribute table, a **Row** is positioned horizontally and contains a series of thematic descriptors. 
+
+--
+
+- Together, a **Table** consists of a set of data elements that has a horizontal dimension (rows) and a vertical dimension
+(columns) in a relational database system. A table has a specified number of columns but can
+have any number of rows. A table is often called a relation. **Columns** are also referred to **Fields**.
+
+---
+
+background-size: cover
+class: left ,top
+# GIS | Terminology for Class 1
+### GIS Shapfile Format
+
+.center[&lt;img src="img/shp.png" width= 90%/&gt;]
+
+.footnote[[Source](https://en.wikipedia.org/wiki/Shapefile)]
+
+--
+
+- Arguably most common GIS vector file format. 
+
+--
+
+- **3** mandatory files.
+
+---
+
+background-size: cover
+class: left ,top
+# GIS | Terminology for Class 1
+
+### Large Scale vs. Small Scale
+
+.center[&lt;img src="img/scale.png" width= 80%/&gt;]
+---
+
+class: left ,top, inverse
+# Lecture 1 End
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
