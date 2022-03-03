@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Lecture 6:</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Stephen Metts | Part-Time Associate Professor" />
+    <script src="libs/header-attrs-2.9/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Lecture 6:
+## Map Projections, Coordinate Reference Systems (CRS) and Datums
+### Stephen Metts | Part-Time Associate Professor
+### <a href="https://www.newschool.edu/international-affairs/">Graduate School of International Affairs, Management and Urban Policy The New School, NYC</a>
+### Fall 2021 | <a href="https://courses.newschool.edu/courses/NINT5380/2189/">NINT 5380</a>
+
+---
+
+
+background-image: url(img/1.png)
+background-size: cover
+class: left ,top, inverse
+# Map Projections
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+## Topics
+
+--
+
+- ### .inverse[Three families of map projections]
+
+--
+
+- ### .inverse[Map Distortion]
+
+--
+
+- ### .inverse[Coordinate Reference System (CRS)]
+
+--
+
+- ### .inverse[Datums]
+
+--
+
+- ### .inverse[Special Use Case CRS - Universal Transverse Mercator (UTM)]
+
+---
+
+background-image: url(img/2.png)
+background-size: cover
+class: left ,top, inverse
+# Map Projections
+.footnote[[source](https://bl.ocks.org/mbostock/29cddc0006f8b98eff12e60dd08f59a7)]
+
+---
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Globe | Sphere 
+
+.center[&lt;img src="img/3.png" width= 60%/&gt;]
+
+
+---
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Globe | Sphere 
+
+.center[&lt;img src="img/4.png" width= 60%/&gt;]
+
+---
+
+background-image: url(img/5.png)
+background-size: cover
+class: left ,top, inverse
+# Map Projections
+
+
+---
+
+background-image: url(img/6.png)
+background-size: cover
+class: left ,top, inverse
+# Map Projections
+
+---
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Sphere &gt; Flat Surface always results in distortion
+.center[&lt;img src="img/7.png" width= 80%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Tissot's indicatrix -  mathematical contrivance to show distortion  
+
+.center[&lt;img src="img/8.png" width= 60%/&gt;]
+.footnote[[source](https://bl.ocks.org/mbostock/29cddc0006f8b98eff12e60dd08f59a7)]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Distortion
+
+.center[&lt;img src="img/9.png" width= 60%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+## Development Stages
+
+--
+
+- ### .inverse[Earth]
+
+--
+
+- ### .inverse[Geoid]
+
+--
+
+- ### .inverse[Ellipsoid]
+
+--
+
+- ### .inverse[Plane]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Development Stages
+
+.center[&lt;img src="img/10.png" width= 60%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Stage 1 - Earth Surface 
+
+.center[&lt;img src="img/earth.gif" width= 60%/&gt;]
+.footnote[[source](http://www.asu.cas.cz/~bezdek/vyzkum/rotating_3d_globe/rotating_3d_globe/manual.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Stage 2 - Geoid
+
+.center[&lt;img src="img/geoid.gif" width= 60%/&gt;]
+.footnote[[source](http://www.asu.cas.cz/~bezdek/vyzkum/rotating_3d_globe/rotating_3d_globe/manual.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Stage 2 - Geoid Surface relative to Elevation, Topography
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+.center[&lt;img src="img/11.png" width= 70%/&gt;]
+
+
+---
+
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Stage 3 - Ellipse | Ellipsoid Surface
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.center[&lt;img src="img/ellipse.gif" width= 40%/&gt;]
+.footnote[[source](https://mathworld.wolfram.com/Ellipse.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Stage 3 - Ellipsoid Surface relative to Geoid Surface 
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+.center[&lt;img src="img/12.png" width= 70%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Planar Surface | Point of Tangency 
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+.center[&lt;img src="img/13.png" width= 50%/&gt;]
+
+
+---
+
+background-image: url(img/14.png)
+background-size: cover
+class: left ,top, inverse
+# Map Projections
+
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Light Bulb Analogy | Projection Outward
+&lt;br&gt;
+.center[&lt;img src="img/15.png" width= 60%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Map Measurement Transformation- Angular Degrees to Planar Units
+&lt;br&gt;
+&lt;br&gt;
+.center[&lt;img src="img/16.png" width= 70%/&gt;]
+
+---
+
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+## 4 Geographic Properties Subject to Map Distortion
+
+--
+
+- ### .inverse[Area]
+
+--
+
+- ### .inverse[Shape]
+
+--
+
+- ### .inverse[Distance]
+
+--
+
+- ### .inverse[Direction]
+
+
+
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Problem: Area Distortion  
+### Correction: Equal-Area Projections or Equivalent Projections Preserve Area
+- Tissot circles are all the same relative size across the map.
+&lt;br&gt;
+.center[&lt;img src="img/map_puzzle.gif" width= 40%/&gt;]
+.footnote[[source](http://www.asu.cas.cz/~bezdek/vyzkum/rotating_3d_globe/rotating_3d_globe/manual.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Problem: Shape or Form Distortion 
+### Correction: Conformal Projections
+- ‘Conformal Projections’ Preserve Form at and near point of tangency.
+&lt;br&gt;
+.center[&lt;img src="img/17.png" width= 50%/&gt;]
+.footnote[[source](http://axismaps.github.io/thematic-cartography/articles/projections.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Problem: Shape or Form Distortion 
+### Correction: Conformal Projections
+- ‘Conformal Projections’ Preserve Form at and near point of tangency.
+&lt;br&gt;
+.center[&lt;img src="img/18.png" width= 60%/&gt;]
+.footnote[[source](http://axismaps.github.io/thematic-cartography/articles/projections.html)]
+
+
+---
+
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Problem: Distance Distortion
+### Correction: Equidistant Projections
+- Measured distances not consistent across mapped surface.
+&lt;br&gt;
+&lt;br&gt;
+.center[&lt;img src="img/19.png" width= 60%/&gt;]
+.footnote[[source](http://axismaps.github.io/thematic-cartography/articles/projections.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Problem: Distance Distortion 
+### Correction: Equidistant Projections
+- Measured distances not consistent across mapped surface.
+&lt;br&gt;
+.center[&lt;img src="img/20.png" width= 60%/&gt;]
+.footnote[[source](http://axismaps.github.io/thematic-cartography/articles/projections.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Problem: Direction Distortion
+### Correction: Azimuthal Equidistant Projection
+- All points on the map are at proportionally correct distances from the center point.
+.center[&lt;img src="img/21.png" width= 50%/&gt;]
+.footnote[[source](http://axismaps.github.io/thematic-cartography/articles/projections.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+## 3 Map Projections Families
+
+--
+
+- ### .inverse[Conformal]
+
+--
+
+- ### .inverse[Equidistant]
+
+--
+
+- ### .inverse[Equivalence]
+
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Map Project Families
+
+.center[&lt;img src="img/22.png" width= 70%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Development Surfaces
+
+.center[&lt;img src="img/23.png" width= 50%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Different Development Surfaces Result in Different Mapped Products
+&lt;br&gt;
+.center[&lt;img src="img/24.png" width= 100%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### A datum contains the following ellipsoid (spheroid) declarations; WGS84 datum shown as illustrative example: 
+
+.center[&lt;img src="img/27.png" width= 100%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### An earth-centered datum is better for mapping the world; a local datum is better for mapping a small piece of it. 
+
+.center[&lt;img src="img/29.png" width= 80%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Paper reference maps often specify a map’s datum within the map layout.
+&lt;br&gt;
+.center[&lt;img src="img/28.png" width= 70%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Coordinate Reference Systems
+&lt;br&gt;
+.center[&lt;img src="img/25.png" width= 100%/&gt;]
+.footnote[[source](https://www.earthdatascience.org/courses/earth-analytics/spatial-data-r/intro-to-coordinate-reference-systems/)]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### Coordinate Reference Systems - 2 Types
+&lt;br&gt;
+.center[&lt;img src="img/26.png" width= 100%/&gt;]
+.footnote[[source](https://www.earthdatascience.org/courses/earth-analytics/spatial-data-r/intro-to-coordinate-reference-systems/)]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### UTM: a special use-case in the world of map projections...
+- The UTM system is not a single map projection. 
+- Divides the Earth into sixty zones, each being a six-degree band of longitude.
+- Uses a secant transverse Mercator projection in each zone.
+&lt;br&gt;
+&lt;br&gt;
+.center[&lt;img src="img/30.png" width= 90%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Map Projections
+
+### UTM: situating an AOI within its respective UTM Zone.
+&lt;br&gt;
+.center[&lt;img src="img/31.png" width= 80%/&gt;]
+.footnote[[source](https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/coordinate_reference_systems.html)]
+
+---
+
+background-image: url(img/1.png)
+background-size: cover
+class: left ,top, inverse
+# Map Projections - End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
