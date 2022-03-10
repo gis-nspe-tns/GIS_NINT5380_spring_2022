@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Lecture 7:</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Stephen Metts | Part-Time Associate Professor" />
+    <script src="libs/header-attrs-2.9/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Lecture 7:
+## Spatial Analysis &amp; Geoprocessing
+### Stephen Metts | Part-Time Associate Professor
+### <a href="https://www.newschool.edu/international-affairs/">Graduate School of International Affairs, Management and Urban Policy The New School, NYC</a>
+### Spring 2022 | <a href="https://courses.newschool.edu/courses/NINT5380/2189/">NINT 5380</a>
+
+---
+
+
+background-image: url(img/1.png)
+background-size: cover
+class: left ,top, inverse
+# Spatial Analysis | Geoprocessing
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Geoprocessing
+&lt;br&gt;
+&lt;br&gt;
+.center[&lt;img src="img/2.png" width= 100%/&gt;]
+.footnote[[source](http://www.coloss.org/beebook/I/gis/2/3/2)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Spatial Analysis
+&lt;br&gt;
+.center[&lt;img src="img/3.png" width= 100%/&gt;]
+.footnote[[source](http://www.coloss.org/beebook/I/gis/2/3/2)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Historical Perspective
+
+.center[&lt;img src="img/4.png" width= 80%/&gt;]
+.footnote[[source](http://www.epocalc.net/pages/comp_cad-gis)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Historical Perspective
+&lt;br&gt;
+.center[&lt;img src="img/5.png" width= 100%/&gt;]
+.footnote[[source](http://www.epocalc.net/pages/comp_cad-gis)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Historical Perspective
+
+.center[&lt;img src="img/6.png" width= 85%/&gt;]
+.footnote[[source](http://krygier.owu.edu/krygier_html/geog_222/geog_222_lo/geog_222_lo06.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Historical Perspective
+
+.center[&lt;img src="img/7.png" width= 85%/&gt;]
+.footnote[[source](http://krygier.owu.edu/krygier_html/geog_222/geog_222_lo/geog_222_lo06.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Historical Perspective
+
+.center[&lt;img src="img/8.png" width= 85%/&gt;]
+.footnote[[source](http://krygier.owu.edu/krygier_html/geog_222/geog_222_lo/geog_222_lo06.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Historical Perspective
+
+.center[&lt;img src="img/9.png" width= 85%/&gt;]
+.footnote[[source](http://krygier.owu.edu/krygier_html/geog_222/geog_222_lo/geog_222_lo06.html)]
+
+---
+
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Historical Perspective
+&lt;br&gt;
+.center[&lt;img src="img/10.png" width= 50%/&gt;]
+.footnote[[source](http://krygier.owu.edu/krygier_html/geog_222/geog_222_lo/geog_222_lo06.html)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Geoprocessing Structure
+#### Models are workflows that string together sequences of geoprocessing tools
+&lt;br&gt;
+.center[&lt;img src="img/11.png" width= 100%/&gt;]
+.footnote[[source](http://desktop.arcgis.com/en/arcmap/10.3/analyze/modelbuilder/what-is-modelbuilder.htm)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Geoprocessing Structure
+#### Models are workflows that string together sequences of geoprocessing tools
+
+.center[&lt;img src="img/12.png" width= 70%/&gt;]
+.footnote[[source](http://desktop.arcgis.com/en/arcmap/10.3/analyze/modelbuilder/what-is-modelbuilder.htm)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+### Common | Essential Analysis Queries
+
+--
+
+- ### .inverse[Where]
+
+--
+
+- ### .inverse[Most vs. Least]
+
+--
+
+- ### .inverse[Density]
+
+--
+
+- ### .inverse[Inside, Outside, Nearby]
+
+--
+
+- ### .inverse[Change Over Time]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Spatial Analysis Concepts                       
+
+--
+
+- ### .inverse[Selections]
+
+--
+
+- ### .inverse[Measurment | Distance]
+
+--
+
+- ### .inverse[Boolean Logic]
+
+--
+
+- ### .inverse[Overlay]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Analysis Concept &gt; Selections 
+&lt;br&gt;
+.center[&lt;img src="img/13.png" width= 90%/&gt;]
+
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Analysis Concept &gt; Distance
+&lt;br&gt;
+&lt;br&gt;
+.center[&lt;img src="img/14.png" width= 100%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Analysis Concept &gt; Boolean Logic
+&lt;br&gt;
+&lt;br&gt;
+.center[&lt;img src="img/15.png" width= 100%/&gt;]
+.footnote[[source](https://geogra.uah.es/patxi/gisweb/VOModule/VO_Concepts.htm)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Analysis Concept &gt; Overlay
+
+.center[&lt;img src="img/16.png" width= 100%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Analysis Concept &gt; Overlay
+&lt;br&gt;
+.center[&lt;img src="img/17.png" width= 60%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Analysis Concept &gt; Overlay
+
+.center[&lt;img src="img/18.png" width= 70%/&gt;]
+
+---
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Assignment 7 Review  
+
+### Analysis Steps
+
+--
+
+- ### .inverse[Understand Problem + Context]
+
+--
+
+- ### .inverse[Measurement | Analysis Steps]
+
+--
+
+- ### .inverse[Flowchart Steps]
+
+--
+
+- ### .inverse[Derive Results]
+
+--
+
+- ### .inverse[Design Cartographic Output]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Assignment 7 Review 
+### Problem &amp; Context
+
+.center[&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/sou_DiRJek4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;]
+.footnote[[source](https://youtu.be/sou_DiRJek4)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Assignment 7 Review 
+### Problem &amp; Context
+#### Cluster Bombs
+
+.center[&lt;img src="img/19.png" width= 50%/&gt;]
+.footnote[[source](http://news.bbc.co.uk/2/hi/europe/7960116.stm)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Assignment 7 Review 
+### Problem &amp; Context
+#### Landmines
+
+.center[&lt;img src="img/20.jpg" width= 50%/&gt;]
+.footnote[[source](https://www.globalgiving.org/projects/removing-mines-in-kosovo/)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Assignment 7 Review 
+### Problem &amp; Context
+#### Terminology
+
+.center[&lt;img src="img/21.png" width= 70%/&gt;]
+.footnote[[source](http://www.weaponslaw.org/glossary/toxic-remnants-of-war)]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Assignment 7 Review 
+### Problem &amp; Context
+&lt;br&gt;
+.center[&lt;img src="img/22.png" width= 80%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Assignment 7 Review  
+
+### Analysis Steps for Workflow (3)
+
+--
+
+- ### .inverse[Quantify Extent and Severity of Hazard.]
+
+--
+
+- ### .inverse[Identify Safe Areas.]
+
+--
+
+- ### .inverse[Set Priorities for Mitigation.]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Assignment 7 Review 
+### Flowchart Steps
+
+.center[&lt;img src="img/23.png" width= 70%/&gt;]
+
+---
+
+background-size: cover
+class: left ,top
+# Spatial Analysis | Geoprocessing
+
+## Assignment 7 Review 
+### Derive Results &amp; Design Cartgraphic Output
+&lt;br&gt;
+.center[&lt;img src="img/24.png" width= 90%/&gt;]
+
+---
+
+background-image: url(img/1.png)
+background-size: cover
+class: left ,top, inverse
+# Map Projections - End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
